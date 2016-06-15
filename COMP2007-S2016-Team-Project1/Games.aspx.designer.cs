@@ -7,20 +7,18 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_S2016_Team_Project1
-{
-
-
-    public partial class Students
-    {
-
+namespace COMP2007_S2016_Team_Project1 {
+    
+    
+    public partial class Games {
+        
         /// <summary>
-        /// StudentsGridView control.
+        /// GamesGridView control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView StudentsGridView;
+        protected global::System.Web.UI.WebControls.GridView GamesGridView;
     }
 }

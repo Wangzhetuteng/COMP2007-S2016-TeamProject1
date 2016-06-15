@@ -12,23 +12,20 @@ namespace COMP2007_S2016_Team_Project1.Models
     using System;
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
-
-    public partial class DefaultConnection : DbContext
+    
+    public partial class DefaultConnection2 : DbContext
     {
-        public DefaultConnection()
-            : base("name=DefaultConnection")
+        public DefaultConnection2()
+            : base("name=DefaultConnection2")
         {
         }
-
+    
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             throw new UnintentionalCodeFirstException();
         }
-
-        public virtual DbSet<Course> Courses { get; set; }
-        public virtual DbSet<Department> Departments { get; set; }
-        public virtual DbSet<Enrollment> Enrollments { get; set; }
-        public virtual DbSet<Student> Students { get; set; }
-        public object Games { get; internal set; }
+    
+        public virtual DbSet<Game> Games { get; set; }
+        public virtual DbSet<Team> Teams { get; set; }
     }
 }

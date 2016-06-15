@@ -15,6 +15,8 @@ namespace COMP2007_S2016_Team_Project1
 {
     public partial class Navbar : System.Web.UI.UserControl
     {
+        
+
         protected void Page_Load(object sender, EventArgs e)
         {
             SetActivePage();
@@ -35,8 +37,8 @@ namespace COMP2007_S2016_Team_Project1
                 case "Home Page":
                     home.Attributes.Add("class", "active");
                     break;
-                case "Students":
-                    students.Attributes.Add("class", "active");
+                case "Games":
+                    games.Attributes.Add("class", "active");
                     break;
                 case "Courses":
                     courses.Attributes.Add("class", "active");

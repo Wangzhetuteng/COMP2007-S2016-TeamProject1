@@ -7,13 +7,11 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace COMP2007_S2016_Team_Project1
-{
-
-
-    public partial class Navbar
-    {
-
+namespace COMP2007_S2016_Team_Project1 {
+    
+    
+    public partial class Navbar {
+        
         /// <summary>
         /// home control.
         /// </summary>
@@ -22,16 +20,16 @@ namespace COMP2007_S2016_Team_Project1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl home;
-
+        
         /// <summary>
-        /// students control.
+        /// games control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.HtmlControls.HtmlGenericControl students;
-
+        protected global::System.Web.UI.HtmlControls.HtmlGenericControl games;
+        
         /// <summary>
         /// courses control.
         /// </summary>
@@ -40,7 +38,7 @@ namespace COMP2007_S2016_Team_Project1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl courses;
-
+        
         /// <summary>
         /// departments control.
         /// </summary>
@@ -49,7 +47,7 @@ namespace COMP2007_S2016_Team_Project1
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.HtmlControls.HtmlGenericControl departments;
-
+        
         /// <summary>
         /// contact control.
         /// </summary>
