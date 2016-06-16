@@ -40,15 +40,11 @@ namespace COMP2007_S2016_Team_Project1
                 case "Games":
                     games.Attributes.Add("class", "active");
                     break;
-                case "Courses":
-                    courses.Attributes.Add("class", "active");
+                case "Teams":
+                    teams.Attributes.Add("class", "active");
                     break;
-                case "Departments":
-                    departments.Attributes.Add("class", "active");
-                    break;
-                case "Contact":
-                    contact.Attributes.Add("class", "active");
-                    break;
+
+
             }
         }
     }

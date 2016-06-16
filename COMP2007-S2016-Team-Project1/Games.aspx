@@ -6,11 +6,31 @@
             <div class="col-md-offset-2 col-md-8">
                 <h1>Game List</h1>
                 <a href="GameDetails.aspx" class="btn btn-success btn-sm"><i class="fa fa-plus"></i> Add Game</a>
+                
+                
+                <div>
+                    <label for="PageSizeDropDownList">Record Per Page:</label>
+                    <asp:DropDownList ID="PageSizeDropDownList" runat="server"
+                        AutoPostBack="true" CssClass="btn btn-default btn-sm dropdown-toggle"
+                        OnSelectedIndexChanged="PageSizeDropDownList_SelectedIndexChanged">
+                        <asp:ListItem Text="3" Value="3"/>
+                        <asp:ListItem Text="5" Value="5"/>
+                        <asp:ListItem Text="10" Value="10"/>
+                        <asp:ListItem Text="All" Value="10000"/>
+                    </asp:DropDownList>
+                </div>
+                
+                
                 <asp:GridView runat="server" CssClass="table table-bordered table-striped table-hover" 
-                    ID="GamesGridView" AutoGenerateColumns="false">
+                    ID="GamesGridView" AutoGenerateColumns="false"
+                    DataKeyNames="GameID" 
+                    OnRowDeleting="GamesGridView_RowDeleting"
+                    AllowPaging="true" PageSize="3" OnPageIndexChanging="GamesGridView_PageIndexChanging"
+                    AllowSorting="true" 
+                    OnSorting="GamesGridView_Sorting" OnRowDataBound="GamesGridView_RowDataBound" 
+                    PagerStyle-CssClass="pagination-ys">
                     <Columns>
                         <asp:BoundField DataField="GameID" HeaderText="Game ID" Visible="true" SortExpression="GameID"/>
-                       
                         <asp:BoundField DataField="GameDescription" HeaderText="GameDescription" Visible="true" SortExpression="GameDescription"/>
                         <asp:BoundField DataField="TotalPoints" HeaderText="Total Points" Visible="true" SortExpression="TotalPoints"/>
                         <asp:BoundField DataField="Spectators" HeaderText="Spectators" Visible="true"  SortExpression="Spectators"/>

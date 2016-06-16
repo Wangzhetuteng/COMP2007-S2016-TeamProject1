@@ -14,7 +14,7 @@ namespace COMP2007_S2016_Team_Project1.Models
     
     public partial class Game
     {
-        internal string GameName;
+        
 
         public int GameID { get; set; }
         public string GameDescription { get; set; }
